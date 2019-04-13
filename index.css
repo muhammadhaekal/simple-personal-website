@@ -1,0 +1,31 @@
+body {
+  margin: 0 0;
+}
+
+#cookies-tnc {
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.tnc-description {
+  max-width: 720px;
+}
+
+.tnc-description-container {
+  display: flex;
+}
+
+.tnc-button {
+  padding: 5px 8px;
+  background-color: #017ac1;
+  border: 1px solid #017ac1;
+  border-radius: 3px;
+  color: white;
+}
+
+.custom-link {
+  text-decoration: none;
+  color: blue;
+}
