@@ -11,15 +11,17 @@ body {
 
 .tnc-description {
   max-width: 720px;
+  font-size: 18px;
 }
 
 .tnc-description-container {
   display: flex;
+  align-items: center;
 }
 
 .tnc-button {
   padding: 5px 8px;
-  background-color: #017ac1;
+  background-color: rgba(0, 122, 192, 0.877);
   border: 1px solid #017ac1;
   border-radius: 3px;
   color: white;
@@ -28,4 +30,58 @@ body {
 .custom-link {
   text-decoration: none;
   color: blue;
+}
+
+#hero-shot {
+  background-color: green;
+  background-image: url(../img/work-desk__dustin-lee.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.layer {
+  background-color: rgba(0, 47, 75, 0.705);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero-shot-content {
+  max-width: 720px;
+}
+
+.name-desc {
+  color: white;
+  z-index: 2;
+  font-size: 32px;
+  text-align: center;
+  font-family: "Arial Narrow", Arial, sans-serif;
+}
+
+.skills-desc {
+  color: white;
+  z-index: 2;
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Arial Narrow", Arial, sans-serif;
+}
+
+.message {
+  margin-top: 5px;
+  color: white;
+  z-index: 2;
+  font-size: 14px;
+  text-align: center;
+  font-family: "Arial Narrow", Arial, sans-serif;
 }
