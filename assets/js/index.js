@@ -9,6 +9,7 @@ const removeButton = document.getElementById("remove-button");
 tncButton.addEventListener("click", handleTncClick);
 window.addEventListener("scroll", handleScroll);
 removeButton.addEventListener("click", handleRemoveButton);
+document.addEventListener("DOMContentLoaded", handleDocumentReady);
 
 // ---------------------- Handler Function
 function handleTncClick() {
@@ -21,7 +22,6 @@ function handleScroll(e) {
 
   if (scrollPosition >= (1 / 3) * screen.height) {
     newsLetterPannel.style.bottom = 0;
-    console.log("tes");
   }
 }
 
@@ -29,4 +29,10 @@ function handleRemoveButton() {
   newsLetterPannel.style.animation = "slidedown 2s";
   newsLetterPannel.style.bottom = "-100%";
   window.removeEventListener("scroll", handleScroll);
+}
+
+function handleDocumentReady() {
+  console.log(`${cookiesTnc.offsetHeight}px`);
+  heroShot.style.marginTop = `${cookiesTnc.offsetHeight}px`;
+  //   heroShot.style.marginTop = "100px";
 }
