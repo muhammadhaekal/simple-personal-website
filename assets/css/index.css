@@ -56,7 +56,7 @@ body {
 }
 
 .layer {
-  background-color: rgba(0, 47, 75, 0.705);
+  background-color: #004a75a6;
   position: absolute;
   top: 0;
   left: 0;
@@ -181,10 +181,8 @@ footer {
   transition-duration: 2s;
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
   max-width: 680px;
-  bottom: -100%;
   left: 0;
-  /* display: none; */
-  margin-top: 100%;
+  bottom: -100%;
   z-index: 3;
   background-color: #1883c5d8;
   color: white;
@@ -215,6 +213,7 @@ footer {
   border: "2px solid lgihtgrey";
   border-radius: 0;
   border-width: 0;
+  height: 25px;
 }
 
 #submit-button {
@@ -223,25 +222,35 @@ footer {
   width: 150px;
   margin: 0 10px;
   border-width: 0;
-  border-radius: 0;
+  border-radius: 4px;
   background-color: #ff8000;
+  padding: 5px;
 }
 
 #submit-button:hover {
-  background-color: #ff8000;
+  background-color: #cc6600;
   cursor: pointer;
 }
 
-#delete-button:hover {
+#remove-button:hover {
   cursor: pointer;
 }
 
-@keyframes slideUp {
+@keyframes slideup {
   from {
-    left: 0px;
+    bottom: -100%;
   }
   to {
-    left: 200px;
+    bottom: 0;
+  }
+}
+
+@keyframes slidedown {
+  from {
+    bottom: 0px;
+  }
+  to {
+    bottom: -100%;
   }
 }
 
@@ -263,7 +272,18 @@ footer {
 }
 
 @media (max-width: 480px) {
+  body {
+    width: 100%;
+  }
   .highlights {
     grid-template-columns: auto;
+  }
+  .newsletter-form-container {
+    display: block;
+  }
+
+  #submit-button {
+    margin: 15px 0 0 0;
+    width: 100%;
   }
 }
