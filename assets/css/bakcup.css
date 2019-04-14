@@ -42,7 +42,6 @@ body {
 
 #hero-shot {
   margin-top: 62px;
-  background-color: green;
   background-image: url(../img/work-desk__dustin-lee.jpg);
   background-position: right;
   background-repeat: no-repeat;
@@ -180,10 +179,9 @@ footer {
   transition-property: all;
   transition-duration: 2s;
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-  max-width: 680px;
-  bottom: -100%;
+  width: 480px;
+  bottom: -100;
   left: 0;
-  /* display: none; */
   margin-top: 100%;
   z-index: 3;
   background-color: #1883c5d8;
@@ -194,46 +192,6 @@ footer {
 .close-button-container {
   text-align: right;
   padding: 8px;
-}
-
-.newsletter-container {
-  padding: 0 15px 15px 15px;
-}
-
-.newsletter-title {
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.newsletter-form-container {
-  display: flex;
-}
-
-#email-input {
-  width: 100%;
-  box-sizing: border-box;
-  border: "2px solid lgihtgrey";
-  border-radius: 0;
-  border-width: 0;
-}
-
-#submit-button {
-  color: white;
-  font-weight: bolder;
-  width: 150px;
-  margin: 0 10px;
-  border-width: 0;
-  border-radius: 0;
-  background-color: #ff8000;
-}
-
-#submit-button:hover {
-  background-color: #ff8000;
-  cursor: pointer;
-}
-
-#delete-button:hover {
-  cursor: pointer;
 }
 
 @keyframes slideUp {
